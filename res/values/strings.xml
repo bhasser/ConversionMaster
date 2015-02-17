@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversion Master</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_distance">Distance</string>
+    <string name="title_activity_volume">Volume</string>
+    <string name="title_activity_temperature">Temperature</string>
+    <string name="title_activity_weight">Weight</string>
+
+    <string-array name="spnMenuChoice">
+        <item>Distance (Miles &amp; Kilometers)</item>
+        <item>Temperature (Degrees Farenheight &amp; Celcius)</item>
+        <item>Volume (Ounces &amp; Milileters)</item>
+        <item>Weight (Pounds &amp; Kilograms)</item>
+    </string-array>
+
+    <string name="txtWelcome">Welcome To Conversion Master</string>
+    <string name="btnStart">Click Here To Start</string>
+    <string name="txtMenuDisplayInstructions">Select Conversion Category</string>
+    <string name="btnGo">Click To Start Converting</string>
+    <string name="hntDistanceInput">Enter Original Distance</string>
+    <string name="hntTempInput">Enter Original Temp</string>
+    <string name="hntVolumeInput">Enter Original Volume</string>
+    <string name="hntWeightInput">Enter Original Weight</string>
+    <string name="txtDistanceHeader">Convert Miles &amp; Kilometers</string>
+    <string name="txtTempHeader">Convert Degrees Farenheight &amp; Degrees Celsius</string>
+    <string name="txtVolumeHeader">Convert Fluid Ounces &amp; Mililiters</string>
+    <string name="txtWeightHeader">Convert Lbs &amp; Kilograms</string>
+    <string name="btnReturnHome">Main Menu</string>
+    <string name="hntSelectCategory">Select Category</string>
+    <string name="radMilesToKm">Convert Miles to Kilometers</string>
+    <string name="radKmToMiles">Convert Kilometers to Miles</string>
+    <string name="radCtoF">Convert Degrees Celsius to Farenheight</string>
+    <string name="radOzToMl">Convert Fluid Ounces to Mililiters</string>
+    <string name="radMlToOz">Convert Mililiters to Fluid Ounces</string>
+    <string name="radLbtoKg">Convert Lbs to Kilograms</string>
+    <string name="radKgToLbs">Convert Kilograms to Lbs</string>
+    <string name="lblMiles">Miles</string>
+    <string name="lblKilomoters">Kilometers</string>
+    <string name="lblCelsius">Degrees Celsius</string>
+    <string name="lbl">Farenheight</string>
+    <string name="lblMililiters">Mililiters</string>
+    <string name="lblOunces">Fluid Ounces</string>
+    <string name="lblPounds">Lbs</string>
+    <string name="lblKilograms">Kilograms</string>
+    <string name="lblFarenheight">Degrees Farenheight</string>
+    <string name="btnCalculateDistance">Calculate Distance</string>
+    <string name="btnCalculateTemp">Calculate Temperature</string>
+    <string name="btnCalculateVolume">Calculate Volume</string>
+    <string name="btnCalculateWeight">Calculate Weight</string>
+    <string name="radFtoC">Convert Degrees Farenheight to Celsius</string>
+    <string name="radChooseTemp">Convert Temperature (Degrees Farenheight &amp; Celsius</string>
+    <string name="radChooseDistance">Convert Distance (Miles &amp; Km)</string>
+    <string name="radChooseVolume">Convert Volume (Fluid Ounces &amp; Mililiter)</string>
+    <string name="radChooseWeight">Convert Weight (Lbs &amp; Kilograms)</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4661900116757433/3579616907</string>
+    <string name="title_activity_kitchen">Kitchen</string>
+    <string-array name="KitchenConversions">
+        <item >Convert Tablespoons To Cups</item>
+        <item >Convert Cups To Tablespoons</item>
+        <item >Convert Teaspoons To Tablespoons</item>
+        <item >Convert Tablespoons To Teaspoons</item>
+        <item >Convert Cups To Mililiters</item>
+        <item >Convert Mililiters To Cups</item>
+    </string-array>
+    <string name="txtKitchenHeader">Convert Common Cooking Measurements</string>
+    <string name="hntKitchenInput">Enter Measurement Ammount</string>
+    <string name="btnConvert">Click To Convert Measurement</string>
+
+</resources>

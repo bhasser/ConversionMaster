@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.wordpress.bhasser.conversionmaster.Distance" >
+
+    <TextView
+        android:id="@+id/txtDistanceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5sp"
+        android:gravity="center"
+        android:text="@string/txtDistanceHeader"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/distanceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDistanceHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="@string/hntDistanceInput"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp" >
+
+        <RadioButton
+            android:id="@+id/radMilesToKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radMilesToKm" />
+
+        <RadioButton
+            android:id="@+id/radKmToMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radKmToMiles" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculateDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text="@string/btnCalculateDistance" />    
+
+    <TextView
+        android:id="@+id/txtDistanceResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculateDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:textSize="24sp" />    
+    
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDistanceHeader"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/btnReturnHome" />
+
+</RelativeLayout>

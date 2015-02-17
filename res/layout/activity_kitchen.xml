@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.wordpress.bhasser.conversionmaster.Kitchen" >
+
+<TextView
+    android:id="@+id/txtKitchenHeader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spinner1"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="@string/txtKitchenHeader"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittxtKitchenInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtKitchenHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="@string/hntTempInput"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="@string/hntKitchenInput"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittxtKitchenInput"
+        android:entries="@array/KitchenConversions" />
+    
+    <Button
+        android:id="@+id/btnCalculateKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="@string/btnConvert" />
+
+    <TextView
+        android:id="@+id/txtKitchenResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculateKitchen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btnReturnHome" />
+
+</RelativeLayout>
+

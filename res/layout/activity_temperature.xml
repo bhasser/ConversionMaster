@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.wordpress.bhasser.conversionmaster.Temperature" >
+
+    <TextView
+        android:id="@+id/txtTempHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/txtTempHeader"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittxtTempInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTempHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="@string/hntTempInput"
+        android:inputType="numberSigned|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+    
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittxtTempInput"
+        android:layout_alignParentRight="true" >
+
+        <RadioButton
+            android:id="@+id/radFtoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:checked="true"
+            android:text="@string/radFtoC" />
+
+        <RadioButton
+            android:id="@+id/radCtoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radCtoF" />
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/btnCalculateTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="@string/btnCalculateTemp" />
+
+    <TextView
+        android:id="@+id/txtTempResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculateTemp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btnReturnHome" />
+
+</RelativeLayout>
